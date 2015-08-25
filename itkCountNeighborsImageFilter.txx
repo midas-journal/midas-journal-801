@@ -101,7 +101,7 @@ template< class TInputImage, class TOutputImage>
 void
 CountNeighborsImageFilter< TInputImage, TOutputImage>
 ::ThreadedGenerateData(const OutputImageRegionType& outputRegionForThread,
-                       int threadId)
+                       ThreadIdType threadId)
 {
   
   ConstantBoundaryCondition<InputImageType> nbc;
